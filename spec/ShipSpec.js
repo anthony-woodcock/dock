@@ -1,4 +1,5 @@
 describe("Ship", function() {
+
     var port
     var ship
 
@@ -6,4 +7,8 @@ describe("Ship", function() {
         port = new Port()
         ship = new Ship(port)
     })
+
+    it('has a starting port', function () {
+    expect(ship.getCurrentPort()).toEqual(port)
+  })
 })
