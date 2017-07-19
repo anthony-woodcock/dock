@@ -25,4 +25,5 @@ describe("Ship", function() {
 
         expect(ship.getCurrentPort()).toEqual(arrivalPort)
     })
+
 })
