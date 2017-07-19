@@ -9,15 +9,18 @@ Ship.prototype = {
         return this._currentPort
     },
 
-    setSail: function (){
+    setSail: function () {
+        if (this.getCurrentPort().getWeather().isStormy()) {
+            throw new Error('cannot sail in stormy weather')
+        }
 
         this._currentPort = null
 
         return 
     },
 
-        dock: function (){
-            
+        dock: function (port){
+            this._currentPort = port
         }
 
 
