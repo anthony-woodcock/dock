@@ -7,6 +7,18 @@ Ship.prototype = {
 
         getCurrentPort: function () {
         return this._currentPort
-    }
+    },
+
+    setSail: function (){
+
+        this._currentPort = null
+
+        return 
+    },
+
+        dock: function (){
+            
+        }
+
 
 }
